@@ -1,0 +1,48 @@
+.col-lg-3{
+    padding-top: 30px;
+}
+
+
+.col-lg-4{
+    padding-top: 150px;
+}
+
+.thumbnail{
+    width: 300px;
+}
+
+#carouselExample1{
+    width: 400px;
+    height: 600px;
+    
+}
+#carouselExample2{
+    width: 400px;
+    height: 600px;
+}
+#carouselExample3{
+    width: 400px;
+    height: 600px;
+}
+
+.offcanvas-body{
+    background-color:#88756e;
+}
+.nav-item{
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+
+.offcanvas-header{
+    background-color: #88756e;
+}
+.offcanvas-title{
+    color: #FDF5E8;
+    font-family: Old Standard TT;
+    font-size: 40px;
+    font-style: italic;
+    color: aliceblue;
+}
+
+

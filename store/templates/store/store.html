@@ -1,0 +1,127 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div class="row" >
+<div class="col-lg-4"  >
+<div id="carouselExample1" class="carousel carousel-dark slide"  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.zara.net/assets/public/629d/ab7a/714a44b3b7f7/e0a3b8426f2f/13351410800-ult/13351410800-ult.jpg?ts=1720430386345&w=479" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static.zara.net/assets/public/e015/e199/850d40b2a20e/e3a19874cbaf/12815410001-ult/12815410001-ult.jpg?ts=1724320728544&w=958" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static.zara.net/assets/public/6314/c6e6/22cf46238682/18db6dd50a33/13209410624-ult1/13209410624-ult1.jpg?ts=1721816303494&w=958" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="col-lg-4" >
+  <div id="carouselExample2" class="carousel carousel-dark slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.zara.net/assets/public/fd63/5543/d68849d4aaba/e0a9f8171240/11226410800-ult2/11226410800-ult2.jpg?ts=1724254525931&w=479" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static.zara.net/assets/public/c975/8408/e2b048989f38/805a1a46b84c/11227410500-p/11227410500-p.jpg?ts=1724946271098&w=479" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static.zara.net/assets/public/5832/6a97/ad894c498f0c/fc6066ccb6a0/12203410800-ult/12203410800-ult.jpg?ts=1722447834164&w=479" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="col-lg-4" >  
+  <div id="carouselExample3" class="carousel carousel-dark slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.zara.net/assets/public/011e/e158/d8794062bb04/c0601b2979d9/13525410800-ult/13525410800-ult.jpg?ts=1724052854699&w=479" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static.zara.net/assets/public/03e1/2ddc/41f64cf78c29/168152ee2031/15437410300-ult/15437410300-ult.jpg?ts=1724326525062&w=479" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static.zara.net/assets/public/a95d/a8fd/8cf446b58b25/1b16a9270dca/15423410002-ult/15423410002-ult.jpg?ts=1724326437363&w=958" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+</div>
+
+
+
+
+    <div class="row" >
+        {% for product in products %}
+        <div class="col-lg-3">
+          <img class="thumbnail" src="{{product.imageURL}}">
+          <div class="box-element product">
+            <br>
+            <h6><strong>{{product.name}}</strong></h6>
+            <hr>
+
+            <button class="btn btn-outline-secondary add-btn">Add To Cart</button>
+            <a class="btn btn-outline-success" href="#">View</a>
+            <h4 style="display: inline-block;">
+            <strong>${{product.price|floatformat:2}}</strong></h4>
+          </div>
+        </div>
+        {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock  %}
+
+
